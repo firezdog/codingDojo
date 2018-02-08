@@ -1,0 +1,62 @@
+<!--Add animation to the ninja -- different images if he walks up, down, left, right -- and toggle between two images to animate the walking.-->
+
+<html>
+<body>
+	<div id='background'>
+        <div id='character' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
+    </div>
+    <script type="text/javascript">
+	    var leftValue = 450, topValue = 100;
+	    var move = 1;
+
+    	function update(direction){
+    		document.getElementById("character").style.left = leftValue+"px";
+    		document.getElementById("character").style.top = topValue+"px";
+    		switch(direction) {
+    			case 37:
+		    		document.getElementById("character").style.backgroundImage = "url('img/left"+move+".png')";
+		    		break;
+    			case 39:
+		    		document.getElementById("character").style.backgroundImage = "url('img/right"+move+".png')";
+		    		break;
+    			case 38:
+		    		document.getElementById("character").style.backgroundImage = "url('img/top"+move+".png')";
+		    		break;
+    			case 40:
+		    		document.getElementById("character").style.backgroundImage = "url('img/down"+move+".png')";
+		    		break;	
+    		}
+    	}
+
+    	document.onkeydown = function(e){
+    		switch (e.keyCode) {
+    			case 37:
+    				if (0 < leftValue) {
+    					leftValue = leftValue - 10;
+    				}
+    				break;
+    			case 39:
+    				if (leftValue < 500) {
+    					leftValue = leftValue + 10;
+    				}
+    				break;
+    			case 38:
+	    			if (0 < topValue) {
+    					topValue = topValue - 10;
+    				}
+    				break;
+    			case 40:
+	    			if (topValue < 500) {
+    					topValue = topValue + 10;
+    				}
+    				break;
+    		}
+    		if (move === 1) {
+    			move = 2;
+    		}
+    		else { move = 1; }
+    		update(e.keyCode);
+    	}
+    </script>
+</body>
+</html>
