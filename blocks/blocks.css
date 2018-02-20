@@ -1,0 +1,46 @@
+body {
+    background-color: #d5d2ae
+}
+
+#header {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+
+h1 {
+    display: inline;
+    font-size: 40px;
+}
+
+.header_image {
+    width: 140px;
+    height: 70px;
+    background-color: white;
+}
+
+#wrapper {
+    margin: 0 auto;
+    display: block;
+    width: 70%;
+    text-align: center;
+}
+
+.col {
+    height: 144px;
+    width: 144px;
+    margin: 4px;
+}
+
+.a {
+    outline: 4px solid black;
+    border: 20px solid #82b4ee;
+    background-color: white;
+}
+
+.b {
+    outline: 4px solid black;
+    border: 20px solid #f36870;
+    background-color: #f36870;
+}
