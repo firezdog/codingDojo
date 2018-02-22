@@ -1,0 +1,138 @@
+wrapper {
+    background-color: #f9f9f9;
+}
+
+#header {
+    margin: 10px;
+    width: 1000px;
+}
+
+#header h1 {
+    display: inline;
+    font-family: "Comic Sans MS"
+}
+
+#header h2 {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+}
+
+#container {
+    width: 1025px;
+    /*begin gradient*/
+    background: rgba(87,87,87,1);
+    background: -moz-linear-gradient(left, rgba(87,87,87,1) 0%, rgba(99,99,99,1) 12%, rgba(115,115,115,1) 22%, rgba(79,79,79,1) 39%, rgba(0,0,0,1) 51%, rgba(20,20,20,1) 60%, rgba(48,48,48,1) 76%, rgba(31,31,31,1) 87%, rgba(20,20,20,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(87,87,87,1)), color-stop(12%, rgba(99,99,99,1)), color-stop(22%, rgba(115,115,115,1)), color-stop(39%, rgba(79,79,79,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(60%, rgba(20,20,20,1)), color-stop(76%, rgba(48,48,48,1)), color-stop(87%, rgba(31,31,31,1)), color-stop(100%, rgba(20,20,20,1)));
+    background: -webkit-linear-gradient(left, rgba(87,87,87,1) 0%, rgba(99,99,99,1) 12%, rgba(115,115,115,1) 22%, rgba(79,79,79,1) 39%, rgba(0,0,0,1) 51%, rgba(20,20,20,1) 60%, rgba(48,48,48,1) 76%, rgba(31,31,31,1) 87%, rgba(20,20,20,1) 100%);
+    background: -o-linear-gradient(left, rgba(87,87,87,1) 0%, rgba(99,99,99,1) 12%, rgba(115,115,115,1) 22%, rgba(79,79,79,1) 39%, rgba(0,0,0,1) 51%, rgba(20,20,20,1) 60%, rgba(48,48,48,1) 76%, rgba(31,31,31,1) 87%, rgba(20,20,20,1) 100%);
+    background: -ms-linear-gradient(left, rgba(87,87,87,1) 0%, rgba(99,99,99,1) 12%, rgba(115,115,115,1) 22%, rgba(79,79,79,1) 39%, rgba(0,0,0,1) 51%, rgba(20,20,20,1) 60%, rgba(48,48,48,1) 76%, rgba(31,31,31,1) 87%, rgba(20,20,20,1) 100%);
+    background: linear-gradient(to right, rgba(87,87,87,1) 0%, rgba(99,99,99,1) 12%, rgba(115,115,115,1) 22%, rgba(79,79,79,1) 39%, rgba(0,0,0,1) 51%, rgba(20,20,20,1) 60%, rgba(48,48,48,1) 76%, rgba(31,31,31,1) 87%, rgba(20,20,20,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#575757', endColorstr='#141414', GradientType=1 );
+}
+
+#content-top {
+    display: inline-block;
+}
+
+#content-top img {
+    display: inline-block;
+    width: 45%;
+    height: 260px;
+    outline: 4px solid #c0c0c0;
+    margin: 20px;
+}
+
+#header-box {
+    display: inline-block;
+    vertical-align: top;
+    height: 260px;
+    width: 45%;
+    background-color:#fefefe;
+    outline: 4px;
+    margin: 20px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    color: #fefefe;
+    /*begin gradient*/
+    background: rgba(165,164,171,1);
+    background: -moz-linear-gradient(top, rgba(165,164,171,1) 0%, rgba(136,134,147,1) 51%, rgba(170,170,175,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(165,164,171,1)), color-stop(51%, rgba(136,134,147,1)), color-stop(100%, rgba(170,170,175,1)));
+    background: -webkit-linear-gradient(top, rgba(165,164,171,1) 0%, rgba(136,134,147,1) 51%, rgba(170,170,175,1) 100%);
+    background: -o-linear-gradient(top, rgba(165,164,171,1) 0%, rgba(136,134,147,1) 51%, rgba(170,170,175,1) 100%);
+    background: -ms-linear-gradient(top, rgba(165,164,171,1) 0%, rgba(136,134,147,1) 51%, rgba(170,170,175,1) 100%);
+    background: linear-gradient(to bottom, rgba(165,164,171,1) 0%, rgba(136,134,147,1) 51%, rgba(170,170,175,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5a4ab', endColorstr='#aaaaaf', GradientType=0 );
+}
+
+p {
+    margin: 10px;
+}
+
+.box {
+    vertical-align: top;
+    display: inline-block;
+    width: 295px;
+    background-color: red;
+    margin: 20px;
+    background-image: linear-gradient(to right, #f9f7f9, #f2edf2, #ebe4eb, #e5dae5, #ded1de);;
+}
+
+.box img {
+    width: 295px;
+    margin-top: 0;
+}
+
+.box p {
+    height: 160px;
+}
+
+div.technologies {
+    margin: 2%;
+}
+
+img.icon {
+    width: 18%;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #407d61;
+    color: #fefefe;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow:5px 5px 10px black; 
+}
+
+button:focus {
+    outline: none;
+}
+
+#footer-top {
+    vertical-align: top;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 1025px;
+}
+
+#footer-bottom {
+    vertical-align: top;
+    display: block;
+    text-align: center;
+    width: 1025px;
+}
+
+img.small-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
