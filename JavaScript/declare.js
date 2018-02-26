@@ -1,0 +1,18 @@
+var num1 = 1;
+console.log("The first number is " + num1);
+var num2 = 0;
+console.log("The second number is " + num2);
+var num3 = -1;
+console.log("The third number is " + num3);
+var num4 = 1.3414;
+console.log("The last number is " + num4);
+var string1 = "Hello";
+console.log("The first string is " + string1);
+var string2 = "";
+console.log("The last string is " + string2);
+var bool1 = true;
+console.log("The first Boolean is " + bool1);
+var bool2 = false;
+console.log("The last Boolean is " + bool2);
+var nothing;
+console.log("The undefined is " + nothing + " and the nothing itself nothings.");
