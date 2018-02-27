@@ -1,0 +1,27 @@
+.demoBox {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.demoButton {
+    vertical-align: top;
+    margin: 20px;
+}
+
+.red {
+    color: red;
+}
+
+.afterButton {
+    display: block;
+    margin-top: 0;
+}
+
+input[type="text"] {
+    display: block;
+}
+
+#dataDemo {
+    margin-left: 10px;
+}

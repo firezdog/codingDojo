@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Demo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div>
+        <button class="demoButton" id="toggleClass" toggle-class="red">AddClass</button>
+        <div class="demoBox">
+            <h2>AddClass</h2>
+            <p>Click the button to toggle class 'red' for this paragraph.</p>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <button class="demoButton" id="hide">Hide/Show</button>
+        <div class="demoBox">
+            <h2>Hide</h2>
+            <p>Click the button to hide / show this paragraph.</p>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <div class="demoBox">
+            <button class="demoButton" id="slideDown">Slide Down</button>
+            <button class="demoButton afterButton" id="slideUp">Slide Up</button>
+            <button class="demoButton afterButton" id="slideToggle">Slide Toggle</button>        
+        </div>
+        <div class="demoBox">
+            <h2>Hide</h2>
+            <p>Click the button to slide the paragraph.</p>
+        </div>
+        <hr>
+    </div>
+        <div>
+        <div class="demoBox">
+            <button class="demoButton" id="fadeIn">Fade In</button>
+            <button class="demoButton afterButton" id="fadeOut">Fade Out</button>
+        </div>
+        <div class="demoBox">
+            <h2>Fade</h2>
+            <p>Click the button to fade the paragraph.</p>
+        </div>
+        <hr>
+    </div>
+    </div>
+    <div>
+        <div class="demoBox">
+            <button class="demoButton" id="before">Prepend</button>
+        </div>
+        <div class="demoBox">
+            <h2>Before</h2>
+            <p>yields falsehood when preceded by its quotation.</p>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <div class="demoBox">
+            <button class="demoButton" id="after">Append</button>
+        </div>
+        <div class="demoBox">
+            <h2>After</h2>
+            <p> 'Yields falsehood when preceded by its quotation'</p>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <div class="demoBox">
+            <textarea rows="5" cols="15"></textarea>
+            <div>
+                <button class="demoButton" id="text">Change Text</button>
+                <button class="demoButton afterButton" id="html">Change HTML</button>
+            </div>
+        </div>
+        <div class="demoBox">
+            <h2>Add Text / HTML</h2>
+            <p></p>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <div class="demoBox">
+            Name: <input type="text" name="name">
+            Age: <input type="text" name="age">
+            <button id="data">Submit</button>
+        </div>
+        <div class="demoBox" id="dataDemo">
+            <h2>Add Data</h2>
+            <p>Your name is <span id="name">______</span> and your age is <span id="age">_____</span></p>
+        </div>
+    </div>
+</body>
+</html>
