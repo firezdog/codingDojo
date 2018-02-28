@@ -1,0 +1,49 @@
+table {
+    font-size: 1.25em;
+}
+
+thead tr {
+    outline: 1px solid black;
+}
+
+thead tr th {
+    padding-right: 60px;
+}
+
+div {
+    margin-top: 50px;
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+hr {
+    margin-top: 0;
+    height: 1px;
+    background-color: black;
+}
+
+form table {
+    text-align: right;
+    font-size: 1em;
+    margin-left: 25px;
+}
+
+form table tr {
+    margin-top: 5px;
+}
+
+form table td {
+    padding-top: 5px;
+}
+
+form table input {
+    text-align: left;
+}
+
+button {
+    margin-top: 30px;
+    margin-left: 210px;
+}
