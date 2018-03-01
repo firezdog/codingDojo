@@ -1,0 +1,19 @@
+<!--There are 802 Pokemon images at e.g. https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gotta Catch 'Em All!</title>
+    </head>
+    <body>
+        <div id="pokemon"></div>
+    </body>
+    <script>
+            var pokeDiv = document.getElementById("pokemon");
+            for (var i=1; i<803; i++) {
+                pokeDiv.innerHTML += '<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+i+'.png">'
+            }
+    </script>
+</html>
