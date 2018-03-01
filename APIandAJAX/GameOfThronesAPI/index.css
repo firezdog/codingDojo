@@ -1,0 +1,39 @@
+#container {
+    margin: 0 auto;
+}
+
+.house{
+    width: 15em;
+    height: 26em;
+    outline: 1px solid black;
+}
+
+#houses {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+#target {
+    width: 70%;
+    margin: 5% auto;
+}
+
+#target p,ul {
+    margin-left: 25%;
+    font-family: 'Old Standard TT', serif;
+}
+
+#container {
+    height: 20em;
+    width: 40em;
+}
+
+#attribution {
+    position: absolute;
+    top: 45rem;
+    left: 51rem;
+}
