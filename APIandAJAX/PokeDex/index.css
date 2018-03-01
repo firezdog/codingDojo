@@ -1,0 +1,35 @@
+#images {
+    display: inline-block;
+    width: 700px;
+    height: 1000px;
+}
+
+img {
+    width: 125px;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+}
+
+.outline {
+    border: 1px solid red;
+}
+
+#information {
+    position: fixed;
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    border: 20px solid red;
+    vertical-align: top;
+    text-align: center;
+}
+
+#information img {
+    display: block;
+    margin: auto;
+}
+
+h2:first-letter {
+    text-transform: capitalize;
+}
