@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by firezdog (http://jsbin.com/xadoleq/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+video {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+  <video-player src:raw="https://canjs.com/docs/images/tom_jerry.webm"></video-player>
+  <script src="https://unpkg.com/can@4/dist/global/can.js"></script>
+<script id="jsbin-javascript">
+can.Component.extend({
+  tag: "video-player",
+  view: 
+    `<video controls
+      on:play="play()"
+      on:pause="pause()"
+      on:loadedmetadata="updateTimes(scope.element)"
+      on:timeupdate="updateTimes(scope.element)">
+    <source src="{{src}}"/>
+    </video>
+    <div>
+      <button on:click="togglePlaying()">{{#if(playing)}}Pause{{else}}Play{{/if}}</button>
+      <input type="range" max="1" step="any" value:bind="percentComplete"/>
+      <span>{{formatTime(currentTime)}}</span>/<span>{{formatTime(duration)}}</span>
+    </div>`,
+  ViewModel: {
+    src: "string",
+    playing: "boolean",
+    currentTime: "number",
+    duration: "number",
+    set percentComplete(newValue) {
+      this.currentTime = newValue * this.duration
+    },
+    get percentComplete() {
+      return this.currentTime / this.duration
+    },
+    play() {
+      this.playing = true;
+    },
+    pause() {
+      this.playing = false;
+    },
+    togglePlaying() {
+      this.playing = !this.playing
+    },
+    connectedCallback(player){
+      this.listenTo("currentTime", function(ev, newTime) {
+        var videoElement = player.querySelector("video");
+        videoElement.currentTime = newTime;
+      });
+      this.listenTo("playing", function(ev, isPlaying) {
+        var videoElement = player.querySelector("video");
+        if(isPlaying) {
+          videoElement.play();
+        } else {
+          videoElement.pause();
+        }
+      });
+    },
+    updateTimes(videoElement) {
+      this.currentTime = videoElement.currentTime;
+      this.duration = videoElement.duration;
+    },
+    formatTime(time) {
+      if (time === null || time === undefined) {
+      return "--"
+      }
+      const durmins = Math.floor(time / 60);
+      let dursecs = Math.floor(time - durmins * 60);
+      if (dursecs < 10) {
+        dursecs = "0" + dursecs;
+      }
+      return durmins + ":" + dursecs
+    }
+  }
+});
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
